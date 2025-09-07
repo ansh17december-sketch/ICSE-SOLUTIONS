@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Class 10th ICSE Subjects - FutureHub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(120deg, #eaf6fe 0%, #f1f4fd 100%);
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 30px #2c76fc1a;
+      max-width: 540px;
+      width: 100%;
+      padding: 42px 26px 32px 26px;
+      margin: 36px 0;
+    }
+    h2 {
+      color: #2c76fc;
+      margin: 0 0 32px 0;
+      font-size: 2.1rem;
+      text-align: center;
+      font-weight: 700;
+    }
+    .subject-list {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+      margin-bottom: 22px;
+    }
+    .subject-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+      border: none;
+      border-radius: 9px;
+      font-size: 1.08rem;
+      color: #405060;
+      background: linear-gradient(90deg, #f5f7fb 60%, #eaf6fe 100%);
+      box-shadow: 0 1px 6px #249bf71a;
+      font-family: inherit;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      transition: background 0.21s, transform 0.19s, box-shadow 0.19s;
+      cursor: pointer;
+      outline: none;
+    }
+    .subject-btn:hover {
+      background: linear-gradient(90deg, #249bf7 0%, #3ad1df 100%);
+      color: #fff;
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 4px 16px #2c76fc30;
+    }
+    .writer {
+      font-weight: 500;
+      color: #249bf7;
+      text-align: right;
+      font-size: 0.96rem;
+      margin-left: 22px;
+    }
+    .back-btn {
+      background: linear-gradient(90deg, #249bf7 0%, #3ad1df 100%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 10px 27px;
+      margin-top: 16px;
+      cursor: pointer;
+      box-shadow: 0 2px 10px #249bf720;
+      letter-spacing: 1px;
+      transition: background 0.19s, transform 0.16s;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .back-btn:hover {
+      background: linear-gradient(90deg, #2156d7 0%, #1ebd72 100%);
+      transform: translateY(-2px) scale(1.03);
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 13px 2px 17px 2px;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+      .subject-btn {
+        font-size: 0.98rem;
+        padding: 12px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>ICSE Class 10 Subjects</h2>
+    <div class="subject-list">
+
+      <button class="subject-btn" onclick="window.location.href='math.html'">
+        Mathematics <span class="writer">Asit Das Gupta, ML Aggarwal, Selina</span>
+      </button>
+      <button class="subject-btn" onclick="window.location.href='physics.html'">
+        Physics <span class="writer">Selina (R.P. Goyal), Together With, S.P. Tripathi</span>
+      </button>
+      <button class="subject-btn" onclick="window.location.href='chemistry.html'">
+        Chemistry <span class="writer">Selina, Together With (Anshu Gulati), Lakhmir Singh</span>
+      </button>
+      <button class="subject-btn" onclick="window.location.href='biology.html'">
+        Biology <span class="writer">Anita Prasad, Selina Concise</span>
+      </button>
+      <button class="subject-btn" onclick="window.location.href='english-literature.html'">
+        English Literature <span class="writer">Shakespeare (A.W. Verity), Agatha Christie</span>
+      </button>
+      <button class="subject-btn" onclick="window.location.href='english-language.html'">
+        English Language <span class="writer">Wren &amp; Martin, Evergreen (Treasure Trove)</span>
+      </button>
+      <button class="subject-btn" onclick="window.location.href='history.html'">
+        History &amp; Civics <span class="writer">Nilima Dayal, Morning Star</span>
+      </button>
+      <button class="subject-btn" onclick="window.location.href='geography.html'">
+        Geography <span class="writer">Morning Star</span>
+      </button>
+      <button class="subject-btn" onclick="window.location.href='computer.html'">
+        Computer Applications <span class="writer">Sumita Arora, Oswal Publishers</span>
+      </button>
+      <button class="subject-btn" onclick="window.location.href='hindi.html'">
+        Hindi <span class="writer">Rachna Va Prabandh, Gyan Sagar</span>
+      </button>
+      <button class="subject-btn" onclick="window.location.href='bengali.html'">
+        Bengali <span class="writer">Mahasweta Devi, Ajoy Gupta</span>
+      </button>
+      <button class="subject-btn" onclick="window.location.href='commercial.html'">
+        Commercial Studies <span class="writer">Oswal Publishers, C. B. Gupta</span>
+      </button>
+    </div>
+    <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
+  </div>
+</body>
+</html>
