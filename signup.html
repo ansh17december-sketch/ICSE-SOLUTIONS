@@ -32,7 +32,7 @@
       font-size: 2.0rem;
       font-weight: 700;
     }
-    input[type="email"], input[type="password"] {
+    input[type="text"], input[type="password"] {
       width: 100%;
       margin-bottom: 18px;
       padding: 13px 12px;
@@ -44,7 +44,7 @@
       background: #f7fafc;
       transition: border-color 0.21s;
     }
-    input[type="email"]:focus, input[type="password"]:focus {
+    input[type="text"]:focus, input[type="password"]:focus {
       border-color: #2c76fc;
       background: #fff;
     }
@@ -93,17 +93,24 @@
 <body>
   <form class="signup-box" onsubmit="handleSignUp(event)">
     <h2>Create your FutureHub Account</h2>
-    <input type="email" placeholder="Email Address" required />
-    <input type="password" placeholder="Password" required />
+    <input id="signup-username" type="text" placeholder="Username" required />
+    <input id="signup-password" type="password" placeholder="Password" required />
     <button class="signup-btn" type="submit">Sign Up</button>
     <button class="to-login-link" type="button" onclick="window.location.href='login.html'">Already have an account? Log in</button>
-    <div class="hint">Hint: any details work for demo</div>
+    <div class="hint">Hint: Demo login/signup - not secure</div>
   </form>
   <script>
     function handleSignUp(e) {
       e.preventDefault();
-      // Simulate successful signup and redirect to index.html
-      window.location.href = 'index.html';
+      const username = document.getElementById("signup-username").value.trim();
+      const password = document.getElementById("signup-password").value.trim();
+      if (username && password) {
+        localStorage.setItem("futurehub-user", JSON.stringify({username, password}));
+        alert("Account created! Now login.");
+        window.location.href = 'login.html';
+      } else {
+        alert("Please fill out all fields.");
+      }
     }
   </script>
 </body>
