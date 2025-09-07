@@ -19,37 +19,6 @@
       background: linear-gradient(120deg, #eaf6fe 0%, #f1f4fd 100%);
       min-height: 100vh;
     }
-    .login-btn {
-      position: fixed;
-      top: 28px;
-      right: 38px;
-      z-index: 99;
-      background: linear-gradient(90deg, #249bf7 0%, #3ad1df 100%);
-      color: #fff;
-      border: none;
-      border-radius: 20px;
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-weight: 600;
-      font-size: 1.01rem;
-      padding: 10px 32px;
-      box-shadow: 0 2px 10px #249bf729;
-      letter-spacing: 1px;
-      cursor: pointer;
-      transition: background 0.22s, box-shadow 0.17s, transform 0.18s;
-    }
-    .login-btn:hover {
-      background: linear-gradient(90deg, #2156d7 0%, #1ebd72 100%);
-      transform: translateY(-2px) scale(1.04);
-      box-shadow: 0 5px 15px #2c76fc42;
-    }
-    @media (max-width: 700px) {
-      .login-btn {
-        top: 14px;
-        right: 12px;
-        padding: 8px 20px;
-        font-size: 0.97rem;
-      }
-    }
     .main-wrap {
       display: flex;
       height: 100vh;
@@ -182,7 +151,6 @@
   </style>
 </head>
 <body>
-  <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
   <div class="main-wrap">
     <aside class="sidebar">
       <div class="checklist">
@@ -209,8 +177,8 @@
           A futuristic, interactive portal for ICSE Class 9th & 10th students. Select your class to access vibrant guides, instant answers, and academic success in style!
         </div>
         <div class="grade-btns">
-          <button class="grade-btn" onclick="window.location.href='login.html'">Class 9th ICSE</button>
-          <button class="grade-btn" onclick="window.location.href='login.html'">Class 10th ICSE</button>
+          <button class="grade-btn" onclick="window.location.href='class9.html'">Class 9th ICSE</button>
+          <button class="grade-btn" onclick="window.location.href='class10.html'">Class 10th ICSE</button>
         </div>
       </div>
     </main>
