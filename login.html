@@ -153,7 +153,6 @@
 <body>
   <form class="login-box" onsubmit="handleLogin(event)">
     <h2>Sign In to FutureHub</h2>
-
     <div class="social-row">
       <button class="social-btn btn-google" type="button" onclick="alert('Google login coming soon!')">
         <svg class="social-icon" viewBox="0 0 48 48">
@@ -175,22 +174,27 @@
         Login with Facebook
       </button>
     </div>
-
     <div class="divider"><span>or</span></div>
-
-    <input type="text" placeholder="Username" required />
-    <input type="password" placeholder="Password" required />
+    <input id="login-username" type="text" placeholder="Username" required />
+    <input id="login-password" type="password" placeholder="Password" required />
     <div class="button-row">
       <button class="login-btn" type="submit">Login</button>
       <button class="signup-btn" type="button" onclick="window.location.href='signup.html'">Sign Up</button>
     </div>
-    <div class="hint">Hint: any credentials work for demo</div>
+    <div class="hint">Hint: Demo only, credentials are stored only in your browser!</div>
   </form>
   <script>
     function handleLogin(e) {
       e.preventDefault();
-      // Simulate successful login and redirect
-      window.location.href = 'resources.html';
+      const username = document.getElementById("login-username").value.trim();
+      const password = document.getElementById("login-password").value.trim();
+      const user = JSON.parse(localStorage.getItem("futurehub-user") || "{}");
+      if (user.username === username && user.password === password) {
+        alert("Login successful!");
+        window.location.href = "index.html";
+      } else {
+        alert("Incorrect credentials. Sign up first, or try again!");
+      }
     }
   </script>
 </body>
