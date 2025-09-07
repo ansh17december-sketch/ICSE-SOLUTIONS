@@ -28,9 +28,78 @@
     }
     h2 {
       color: #2c76fc;
-      margin: 0 0 36px 0;
+      margin: 0 0 28px 0;
       font-size: 2.0rem;
       font-weight: 700;
+      text-align: center;
+    }
+    .social-row {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.07rem;
+      font-weight: 600;
+      padding: 12px 0;
+      cursor: pointer;
+      transition: background 0.18s, transform 0.17s;
+      box-shadow: 0 1px 8px #249bf71a;
+      letter-spacing: 1px;
+      font-family: inherit;
+    }
+    .btn-google {
+      background: #ffa500;
+      color: #fff;
+      border: 1px solid #c87f00;
+    }
+    .btn-google:hover {
+      background: #ffbb33;
+      color: #fff;
+      transform: translateY(-2px) scale(1.04);
+    }
+    .btn-facebook {
+      background: #3b5998;
+      color: #fff;
+      border: 1px solid #2d4373;
+    }
+    .btn-facebook:hover {
+      background: #2d4373;
+      transform: translateY(-2px) scale(1.04);
+    }
+    .social-icon {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .divider {
+      width: 100%;
+      border-bottom: 1px solid #e0eaf2;
+      margin: 18px 0 17px 0;
+      text-align: center;
+      position: relative;
+      height: 12px;
+    }
+    .divider span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background: #fff;
+      transform: translate(-50%, -50%);
+      padding: 0 10px;
+      color: #7e8ba0;
+      font-size: 0.97rem;
+      letter-spacing: 0.4px;
     }
     input[type="text"], input[type="password"] {
       width: 100%;
@@ -76,12 +145,39 @@
       font-size: 0.99rem;
       color: #7e8ba0;
       margin-top: 13px;
+      text-align: center;
+      width: 100%;
     }
   </style>
 </head>
 <body>
   <form class="login-box" onsubmit="handleLogin(event)">
     <h2>Sign In to FutureHub</h2>
+
+    <div class="social-row">
+      <button class="social-btn btn-google" type="button" onclick="alert('Google login coming soon!')">
+        <svg class="social-icon" viewBox="0 0 48 48">
+          <g>
+            <path fill="#4285F4" d="M24 9.5c3.54 0 6.19 1.53 7.61 2.81l5.63-5.49C33.41 4.23 29.1 2 24 2 14.82 2 6.88 7.58 3.32 15.06l6.77 5.25C12.13 13.34 17.61 9.5 24 9.5z"/>
+            <path fill="#34A853" d="M46.14 24.55c0-1.7-.15-2.95-.47-4.24H24v7.86h12.54c-.25 2.06-1.62 5.16-4.66 7.25l7.11 5.52c4.02-3.72 6.15-9.2 6.15-16.39z"/>
+            <path fill="#FBBC05" d="M10.09 28.41A14.77 14.77 0 0 1 9.3 24c0-1.53.28-3.04.77-4.41l-6.79-5.26C2.37 17.39 2 20.15 2 24c0 3.71.53 7.13 1.46 10.16l6.63-5.75z"/>
+            <path fill="#EA4335" d="M24 46c6.16 0 11.33-1.95 15.11-5.3l-7.17-5.56c-1.98 1.41-4.67 2.4-7.94 2.4-6.12 0-11.3-4.13-13.17-9.84l-6.73 5.74C6.82 43.51 14.64 46 24 46z"/>
+            <path fill="none" d="M2 2h44v44H2V2z"/>
+          </g>
+        </svg>
+        Login with Google
+      </button>
+      <button class="social-btn btn-facebook" type="button" onclick="alert('Facebook login coming soon!')">
+        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.196 112.196">
+          <circle cx="56.098" cy="56.098" r="56.098" fill="#3b5998"/>
+          <path d="M77.198 58.681l2.9-18.029h-17.05v-11.74c0-4.936 2.424-9.747 10.188-9.747h7.874V6.435S68.794 6.065 63.136 6.065c-13.217 0-21.843 8.012-21.843 22.582v12.006H25.694v18.029h15.599v46.714c3.167.497 6.415.759 9.757.759s6.59-.262 9.757-.759V58.681h16.391z" fill="#fff"/>
+        </svg>
+        Login with Facebook
+      </button>
+    </div>
+
+    <div class="divider"><span>or</span></div>
+
     <input type="text" placeholder="Username" required />
     <input type="password" placeholder="Password" required />
     <div class="button-row">
