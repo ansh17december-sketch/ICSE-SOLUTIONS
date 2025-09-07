@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ML Aggarwal — Choose Chapter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(120deg, #eaf6fe 0%, #f1f4fd 100%);
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 30px #2c76fc1a;
+      max-width: 430px;
+      width: 100%;
+      padding: 38px 18px 26px 18px;
+      margin: 36px 0;
+    }
+    h2 {
+      color: #2c76fc;
+      margin-bottom: 14px;
+      font-size: 1.4rem;
+      text-align: center;
+      font-weight: 700;
+    }
+    .chapter-count {
+      color: #45bbfc;
+      font-size: 1.04rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 23px;
+      letter-spacing: 0.2px;
+    }
+    .chapter-list {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      margin-bottom: 18px;
+    }
+    .chapter-btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #f5f7fb 60%, #eaf6fe 100%);
+      color: #2072bd;
+      font-size: 1.005rem;
+      font-family: inherit;
+      font-weight: 600;
+      transition: background 0.16s, color 0.14s, transform 0.13s;
+      box-shadow: 0 1px 6px #249bf71a;
+      cursor: pointer;
+      outline: none;
+      text-align: left;
+    }
+    .chapter-number {
+      font-size: 0.96rem;
+      background: #d8ecfe;
+      color: #2566d8;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+    .chapter-btn:hover {
+      background: linear-gradient(90deg, #249bf7 0%, #3ad1df 100%);
+      color: #fff;
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 4px 16px #2c76fc30;
+    }
+    .back-btn {
+      background: linear-gradient(90deg, #249bf7 0%, #3ad1df 100%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 600;
+      font-size: 1.04rem;
+      padding: 9px 20px;
+      margin-top: 14px;
+      cursor: pointer;
+      box-shadow: 0 2px 10px #249bf720;
+      letter-spacing: 1px;
+      transition: background 0.18s, transform 0.16s;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .back-btn:hover {
+      background: linear-gradient(90deg, #2156d7 0%, #1ebd72 100%);
+      transform: translateY(-2px) scale(1.03);
+    }
+    @media (max-width: 480px) {
+      .container { padding: 12px 2px 12px 2px; }
+      h2 { font-size: 1.05rem; }
+      .chapter-btn { font-size: 0.91rem; }
+      .chapter-number { width: 22px; height: 22px; font-size: 0.89rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Choose ML Aggarwal Maths Chapter</h2>
+    <div class="chapter-count">Total Chapters: 22</div>
+    <div class="chapter-list">
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch1.html'"><span class="chapter-number">1</span> Goods and Services Tax</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch2.html'"><span class="chapter-number">2</span> Banking</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch3.html'"><span class="chapter-number">3</span> Shares and Dividends</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch4.html'"><span class="chapter-number">4</span> Linear Inequations</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch5.html'"><span class="chapter-number">5</span> Quadratic Equations in One Variable</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch6.html'"><span class="chapter-number">6</span> Factorisation</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch7.html'"><span class="chapter-number">7</span> Ratio and Proportion</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch8.html'"><span class="chapter-number">8</span> Matrices</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch9.html'"><span class="chapter-number">9</span> Arithmetic &amp; Geometric Progressions</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch10.html'"><span class="chapter-number">10</span> Reflection</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch11.html'"><span class="chapter-number">11</span> Section Formula</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch12.html'"><span class="chapter-number">12</span> Equation of Straight Line</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch13.html'"><span class="chapter-number">13</span> Similarity</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch14.html'"><span class="chapter-number">14</span> Locus</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch15.html'"><span class="chapter-number">15</span> Circles</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch16.html'"><span class="chapter-number">16</span> Constructions</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch17.html'"><span class="chapter-number">17</span> Mensuration</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch18.html'"><span class="chapter-number">18</span> Trigonometric Identities</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch19.html'"><span class="chapter-number">19</span> Trigonometrical Tables</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch20.html'"><span class="chapter-number">20</span> Heights and Distances</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch21.html'"><span class="chapter-number">21</span> Measures of Central Tendency</button>
+      <button class="chapter-btn" onclick="window.location.href='mlaggarwal-ch22.html'"><span class="chapter-number">22</span> Probability</button>
+    </div>
+    <button class="back-btn" onclick="window.location.href='math.html'">Back to Publications</button>
+  </div>
+</body>
+</html>
